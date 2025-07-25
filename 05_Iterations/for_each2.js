@@ -47,3 +47,7 @@ myarr.forEach(element => {
 // java  == java
 // C++  == cpp
 // javascript  == js
+
+
+
+// forEach  Doesnot return the value 
