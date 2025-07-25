@@ -7,8 +7,8 @@ console.log(`Hello my name is ${name} and my repo count is ${repocount}`)
 
 const gameName = new String('sachin-sj-com')
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
+console.log(gameName[0]);
+console.log(gameName.__proto__);
 
 
 // console.log(gameName.length);
@@ -35,3 +35,17 @@ console.log(url.includes('sundar'))
 console.log(gameName.split('-'));
 
 
+
+
+// Hello my name is Sachin and my repo count is 50
+// s
+// {}
+// c
+// -1
+// sach
+
+//    hitesh    
+// hitesh
+// https://Sachin.com/sachin-jaiswal
+// false
+// [ 'sachin', 'sj', 'com' ]

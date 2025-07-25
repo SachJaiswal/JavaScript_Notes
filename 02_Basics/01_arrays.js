@@ -12,16 +12,16 @@ console.log(arr1[0])
 console.log(arr1.length)
 
 
-console.log(myArr[1]);
+//console.log(myArr[1]);
 
 // Array methods
-
+const myArr = new Array()
 myArr.push(6)
 myArr.push(7)
 myArr.pop()
 
-myArr.unshift(9)
-myArr.shift()
+myArr.unshift(9)          // Add value at start
+myArr.shift()             // remove value from start
 
 console.log(myArr.includes(9));
 console.log(myArr.indexOf(3));

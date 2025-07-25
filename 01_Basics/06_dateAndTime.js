@@ -6,6 +6,12 @@ let myDate = new Date()
 // console.log(myDate.toLocaleString());
 // console.log(typeof myDate);
 
+// Output
+// Fri Jul 25 2025 11:31:35 GMT+0000 (Coordinated Universal Time)
+// Fri Jul 25 2025
+// 7/25/2025, 11:31:35 AM
+// object
+
 // let myCreatedDate = new Date(2023, 0, 23)
 // let myCreatedDate = new Date(2023, 0, 23, 5, 3)
 // let myCreatedDate = new Date("2023-01-14")
