@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class ="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+
+    function addValue(LangName){
+        const li = document.createElement('li')
+
+        li.innerHTML=  `${LangName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+     function addValueOptimized(LangName){
+        const li = document.createElement('li')
+
+        li.appendChild(document.createTextNode(LangName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+
+    addValueOptimized("goLang")
+    addValue("Python")
+    addValue("Java")
+    addValueOptimized("C#")
+
+    //Edit
+    const secondElement = document.querySelector("li:nth-child(2)")
+   // secondElement.innerHTML="Typescript"
+
+   const newLi=document.createElement('li')
+   newLi.textContent="Typescript"
+   secondElement.replaceWith(newLi)
+</script>
+</html>
