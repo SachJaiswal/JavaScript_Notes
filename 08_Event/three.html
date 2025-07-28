@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Of async </title>
+</head>
+<body>
+    <h1 id="name">Hello world</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+</body>
+<script>
+    let interval=null
+
+   const startinterval =document.querySelector('#start').addEventListener('click', function () {
+    if(interval != null) return
+    interval = setInterval(function () {
+        console.log("Sachin",Date.now())   
+    },1000)
+    
+   })
+  
+  const si =  document.querySelector('#stop').addEventListener('click',function () {
+        
+        if (interval !== null) {
+            clearInterval(interval);
+            interval = null; // Reset so you can start again
+            console.log("Stopped");
+        }
+    })
+
+</script>
+</html>
